@@ -1,0 +1,12 @@
+int a=13,b=12;
+void setup()
+{
+  pinMode(a,OUTPUT);
+  pinMode(b,OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(a, LOW);
+  digitalWrite(b, HIGH);
+}
