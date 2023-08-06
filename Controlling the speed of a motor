@@ -1,0 +1,16 @@
+int a=11,b=10;
+void setup()
+{
+  pinMode(a,OUTPUT);
+  pinMode(b,OUTPUT);
+}
+
+void loop()
+{
+ analogWrite(a,60);
+ analogWrite(b,0);
+ delay(2000);
+ analogWrite(a,0);
+ analogWrite(b,120);
+  delay(2000);
+}
