@@ -1,0 +1,19 @@
+int sensor=A0,flame=7,buzzer=5;
+void setup() {
+    Serial.begin(9600);
+    pinMode(buzzer,OUTPUT);
+    pinMode(flame,INPUT);
+
+}
+
+void loop() {
+  if(digitalRead(flame))
+  { 
+    Serial.println("Fire Detected");
+  }
+  else
+  {
+     Serial.println(" No Fire Detected");
+  }
+
+}
